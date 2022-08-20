@@ -1,6 +1,6 @@
 const Stats = (props) => {
   return (
-      <div>Stats</div>
+      <h2>Stats</h2>
   )
 };
 

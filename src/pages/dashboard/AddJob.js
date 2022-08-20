@@ -1,6 +1,6 @@
 const AddJob = (props) => {
   return (
-      <div>AddJob</div>
+      <h2>AddJob</h2>
   )
 };
 

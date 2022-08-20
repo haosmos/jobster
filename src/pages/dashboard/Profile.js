@@ -1,6 +1,6 @@
 const Profile = (props) => {
   return (
-      <div>Profile</div>
+      <h2>Profile</h2>
   )
 };
 
