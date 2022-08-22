@@ -1,7 +1,7 @@
-const AllJobs = (props) => {
+const AddJob = (props) => {
   return (
-      <h2>AllJobs</h2>
+      <h2>All Job</h2>
   )
 };
 
-export default AllJobs;
+export default AddJob;
