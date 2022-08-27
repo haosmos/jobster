@@ -1,11 +1,10 @@
 import Wrapper from '../assets/wrappers/Navbar';
 
 import { FaAlignLeft, FaUserCircle, FaCaretDown } from 'react-icons/fa';
-import { toggleSidebar, logoutUser } from '../features/user/userSlice';
 import Logo from './Logo';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { toggleSidebar, clearStore } from '../features/user/userSlice';
+import { toggleSidebar, clearStore } from '../features/user/userSlice';
 
 const Navbar = (props) => {
   const [ showLogout, setShowLogout ] = useState(false);
@@ -45,7 +44,7 @@ const Navbar = (props) => {
                   type="button"
                   className="dropdown-btn"
                   onClick={
-                    () => dispatch(logoutUser('Logging out...'))
+                    () => dispatch(clearStore('Logging out...'))
                   }>
                 logout
               </button>
