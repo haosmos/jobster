@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import customFetch from '../../utils/axios';
+import customFetch, { checkForUnauthorizedResponse } from '../../utils/axios';
 
 export const getAllJobsThunk = async (_, thunkAPI) => {
   const {
@@ -19,8 +19,8 @@ export const getAllJobsThunk = async (_, thunkAPI) => {
   try {
     const resp = await customFetch(url)
     return resp.data;
-  } catch (e) {
-    return thunkAPI.rejectWithValue('There was an error');
+  } catch (error) {
+    return checkForUnauthorizedResponse(error, thunkAPI);
   }
 }
 
@@ -28,7 +28,7 @@ export const showStatsThunk = async (_, thunkAPI) => {
   try {
     const resp = await customFetch.get('/jobs/stats');
     return resp.data;
-  } catch (e) {
-    return thunkAPI.rejectWithValue(e.response.data.msg);
+  } catch (error) {
+    return checkForUnauthorizedResponse(error, thunkAPI);
   }
 }
