@@ -13,13 +13,17 @@ const JobsContainer = (props) => {
           isLoading,
           page,
           totalJobs,
-          numOfPages
+          numOfPages,
+          search,
+          searchStatus,
+          searchType,
+          sort
         } = useSelector((store) => store.allJobs);
   const dispatch = useDispatch();
   
   useEffect(() => {
     dispatch(getAllJobs())
-  }, [])
+  }, [ page, search, searchStatus, searchType, sort ])
   
   if (isLoading) {
     return (
