@@ -19,8 +19,7 @@
 		"react-toastify": "^9.0.8",
 		"recharts": "^2.1.13",
 		"styled-components": "^5.3.5",
-		"web-vitals": "^2.1.4",
-		"@react-buddy/ide-toolbox": "^2.2.1"
+		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
 		"start": "react-scripts start",
