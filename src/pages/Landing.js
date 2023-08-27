@@ -22,7 +22,7 @@ const Landing = (props) => {
             </p>
             <Link to="/register" className="btn btn-hero">Login/Register</Link>
           </div>
-          <img src="../assets/images/main.svg" alt="job hunt" className="img main-img"/>
+          <img src={main} alt="job hunt" className="img main-img"/>
         </div>
       </Wrapper>
   )
