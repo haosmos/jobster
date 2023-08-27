@@ -15,10 +15,7 @@ const Landing = (props) => {
             <h1>
               job <span>tracking</span> app
             </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, amet
-               aperiam architecto, asperiores ea fugiat, itaque laborum magni
-               nobis quae quia quis quisquam reprehenderit similique suscipit
-               tempora tempore temporibus unde!
+            <p>Проект Jobster -  приложение для управления откликами на вакансии, на которые подал заявку пользователь. Все предложения о работе содержат информацию о названии должности, компании, месте работы, текущем статусе, типе контракта и дате подачи заявления. Основная цель Jobster — предоставить пользователям возможность хранить и управлять предложениями о работе, на которые они подали заявки.
             </p>
             <Link to="/register" className="btn btn-hero">Login/Register</Link>
           </div>
